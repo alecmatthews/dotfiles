@@ -36,8 +36,9 @@ autoload -Uz edit-command-line; zle -N edit-command-line  # Allow commands to be
 
 # vi keymap
 bindkey -v
-export KEYTIMEOUT=1
+export KEYTIMEOUT=15
 
+bindkey -M viins jk vi-cmd-mode
 bindkey -M vicmd v edit-command-line
 
 # completion
