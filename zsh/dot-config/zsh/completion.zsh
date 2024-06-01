@@ -11,7 +11,7 @@ bindkey -M menuselect 'i' vi-insert
 bindkey -M menuselect '/' history-incremental-search-forward
 
 
-autoload -U compinit; compinit
+autoload -U compinit; compinit -d "$XDG_CACHE_HOME/.zcompdump"
 _comp_options+=(globdots)  # complete hidden files
 
 
