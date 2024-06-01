@@ -22,6 +22,11 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 
+# OS specific configs
+if [[ $(uname) == "Darwin" ]]; then
+  source "$ZDOTDIR"/os/mac.zsh
+fi
+
 # aliases
 source "$ZDOTDIR"/aliases.zsh
 
