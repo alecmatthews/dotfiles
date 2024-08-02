@@ -33,7 +33,8 @@ source "$ZDOTDIR"/aliases.zsh
 
 # prompt
 fpath=($ZDOTDIR/prompt $fpath)
-autoload -Uz purification_setup; purification_setup
+autoload -Uz promptinit; promptinit
+prompt purity
 
 # plugins
 fpath=($ZDOTDIR/plugins $fpath)
