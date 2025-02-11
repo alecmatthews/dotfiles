@@ -1,0 +1,7 @@
+# Set the best font
+font-family = "Berkeley Mono"
+font-family = "Symbols Nerd Font Mono"
+font-size = 14
+
+# Set a theme
+theme = tokyonight
