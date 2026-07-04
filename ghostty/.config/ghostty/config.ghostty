@@ -1,8 +1,7 @@
 # Set the best font
 font-family = "Berkeley Mono"
-# font-feature = -calt
 font-family = "Symbols Nerd Font Mono"
-font-size = 14
+font-size = 16
 
 # Set a theme
 theme = Catppuccin Mocha
