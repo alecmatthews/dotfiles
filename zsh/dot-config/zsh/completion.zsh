@@ -10,10 +10,10 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'i' vi-insert
 bindkey -M menuselect '/' history-incremental-search-forward
 
-
 autoload -U compinit; compinit -d "$XDG_CACHE_HOME/.zcompdump"
 _comp_options+=(globdots)  # complete hidden files
 
+bindkey '^Xh' _complete_help
 
 # options
 setopt MENU_COMPLETE     # highlight first element in menu
