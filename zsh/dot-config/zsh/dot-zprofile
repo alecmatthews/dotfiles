@@ -1,9 +1,9 @@
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# .zprofile is sorced for all shells even non-interactive ones
 
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
-source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+# OS specific configs
+if [[ $(uname) == "Darwin" ]]; then
+  source "${ZDOTDIR}/os/mac.zprofile"
+fi
 
 # Cargo (Rust)
 source "${HOME}/.cargo/env" 2>/dev/null || :

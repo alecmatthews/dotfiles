@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+# setup colors for common commands
+function -T colors() {
+  if (( $+commands[dircolors] )); then
+  	eval "$(dircolors -b)"
+	alias ls='ls --color=auto'
+	alias grep='grep --color=auto'
+	alias diff='diff --color=auto'
+  fi
+}
+
+colors

@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Setup user path
+typeset -U path # prevent dup entries
+path=("${HOME}/.config/local/bin" "${HOME}/.local/bin" "${HOME}/go/bin" $path)
+
 # navigation
 setopt AUTO_CD              # Go to folder path without using cd.
 
@@ -41,6 +45,7 @@ prompt purity
 # plugins
 fpath=("${ZDOTDIR}/plugins" $fpath)
 autoload -Uz man_colors; man_colors
+autoload -Uz colors; colors
 autoload -Uz cursor_mode; cursor_mode
 autoload -Uz edit-command-line; zle -N edit-command-line  # Allow commands to be edited in our EDITOR
 

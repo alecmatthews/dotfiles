@@ -14,6 +14,3 @@ export VISUAL='nvim'
 # zsh
 ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
-# Basic path
-typeset -U path # prevent path from getting duplicate items
-path=('$HOME/.config/local/bin' '$HOME/.local/bin' $path)
