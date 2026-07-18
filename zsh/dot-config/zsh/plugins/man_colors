@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Setup some basic colors for the manpages
-function -T man_colors() {
+function man_colors() {
   export LESS_TERMCAP_mb="$(tput bold; tput setaf 1)"
   export LESS_TERMCAP_md="$(tput bold; tput setaf 1)"
   export LESS_TERMCAP_me="$(tput sgr0)"

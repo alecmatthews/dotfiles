@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # setup colors for common commands
-function -T colors() {
+function colors() {
   if (( $+commands[dircolors] )); then
   	eval "$(dircolors -b)"
 	alias ls='ls --color=auto'
